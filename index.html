@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduStore Premium - Material Educativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">EduStore<span>Premium</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar por curso o unidad...">
+            </div>
+            <div class="user-actions">
+                <button class="btn-primary">Mis Compras</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h3>Categorías</h3>
+            <ul>
+                <li class="active">📚 Todos los Cursos</li>
+                <li>🧪 Ciencias</li>
+                <li>🧮 Matemáticas</li>
+                <li>📜 Historia</li>
+                <li>🎨 Arte</li>
+                <li>🎵 Música</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <div class="breadcrumb">
+                <span>Inicio</span> > <span>Cursos</span> > <span id="current-category">General</span>
+            </div>
+
+            <h1 id="page-title">Explora tus Recursos</h1>
+
+            <div class="grid-container" id="material-grid">
+                <!-- Los items se cargarán dinámicamente desde Drive -->
+                <div class="card folder pulse" onclick="navigate('1ero Básico')">
+                    <div class="icon">📁</div>
+                    <div class="card-info">
+                        <h3>1ero Básico</h3>
+                        <p>12 Sub-sectores</p>
+                    </div>
+                </div>
+
+                <div class="card folder pulse" onclick="navigate('2do Básico')">
+                    <div class="icon">📁</div>
+                    <div class="card-info">
+                        <h3>2do Básico</h3>
+                        <p>15 Sub-sectores</p>
+                    </div>
+                </div>
+
+                <div class="card item">
+                    <div class="icon">📄</div>
+                    <div class="card-info">
+                        <h3>Unidad 1: Fracciones</h3>
+                        <p>PDF | 15 MB</p>
+                        <span class="price">$4.990 CLP</span>
+                    </div>
+                    <button class="btn-buy">Comprar ahora</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

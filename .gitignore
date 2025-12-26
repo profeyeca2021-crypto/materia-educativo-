@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.gemini/
+brain/
+educational_store_mockup*.png
+app_files_loaded*.png
+error_connecting_drive*.png
+main_page_store*.png
+gas_auth_needed*.png
+*.webp
