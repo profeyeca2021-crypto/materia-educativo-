@@ -34,8 +34,8 @@ async function navigate(folderId = '', folderName = 'Inicio', isBack = false) {
         renderContent(data);
 
         const currentName = data.parentName || folderName;
-        categorySpan.innerText = currentName;
-        title.innerText = 'Explora ' + currentName;
+        if (categorySpan) categorySpan.innerText = currentName;
+        if (title) title.innerText = 'Explora ' + currentName;
 
     } catch (error) {
         grid.innerHTML = `<div class="error" style="padding: 2rem; color: #ff4444; grid-column: 1/-1;">Error conectando con Drive. Asegúrate de haber pegado la URL de Apps Script en script.js.</div>`;

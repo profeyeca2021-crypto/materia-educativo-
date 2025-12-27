@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="glass-bg"></div>
-    
+
     <header>
         <nav>
             <div class="logo">EduStore<span>Premium</span></div>
@@ -39,10 +41,10 @@
 
         <section class="content">
             <div class="breadcrumb">
-                <span>Inicio</span> > <span>Cursos</span> > <span id="current-category">General</span>
+                <!-- Se llenará dinámicamente -->
             </div>
 
-            <h1 id="page-title">Explora tus Recursos</h1>
+            <h1 id="page-title">Explora <span id="current-category">tus Recursos</span></h1>
 
             <div class="grid-container" id="material-grid">
                 <!-- Los items se cargarán dinámicamente desde Drive -->
@@ -77,4 +79,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
